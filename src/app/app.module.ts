@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MaskCardComponent } from './mask-card/mask-card.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaskCardComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MaskService } from './service/mask.service';
+import { MaskCardComponent } from './mask-card/mask-card.component';
+import { Mask } from './model/mask';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'maszkmester';
+
+  masks: Mask[] = this.mService.masks;
+
+  constructor(private mService: MaskService) {
+    console.log(this.masks)
+  }
+
 }
